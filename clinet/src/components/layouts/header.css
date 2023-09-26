@@ -1,0 +1,19 @@
+.nav-link{
+    font-size: 13px;
+}
+
+.dropdown-item{
+    font-size: 13px;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand1{
+       display: none;
+    }
+   }
+
+   @media screen and (max-width: 992px) {
+    .navbar-brand{
+       display: none;
+    }
+   }
