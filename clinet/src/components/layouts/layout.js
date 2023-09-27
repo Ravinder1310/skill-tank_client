@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./header";
-import Footer from "./footer";
 import { Toaster } from "react-hot-toast";
 
 const Layout = ({ children, title, description, keywords, author }) => {
@@ -11,7 +10,6 @@ const Layout = ({ children, title, description, keywords, author }) => {
         <Toaster />
         {children}
       </main>
-      <Footer />
     </div>
   );
 };

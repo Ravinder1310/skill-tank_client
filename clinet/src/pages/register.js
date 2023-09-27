@@ -20,7 +20,8 @@ const Register = () => {
       const res = await axios.post(`${process.env.REACT_APP_API}/api/v1/auth/register`,{name,email,password,answer})
       if(res && res.data.success){
         toast.success( res.data && res.data.message);
-        navigate("/login")
+        toast.success('Registeration successfull')
+        navigate("/login");
       }else{
 
         toast.error(res.data.message)
@@ -29,11 +30,10 @@ const Register = () => {
       console.log(error);
       toast.error('Something went wrong')
     }
-    toast.success('Registeration successfull')
+    
   }
 
   return (
-    <Layout title={"Register - Ecommerce app"}>
       <div className="form-container">
         <form onSubmit={handleSubmit}>
         <h1 className="title">Register</h1>
@@ -88,7 +88,6 @@ const Register = () => {
           </button>
         </form>
       </div>
-    </Layout>
   );
 }
 

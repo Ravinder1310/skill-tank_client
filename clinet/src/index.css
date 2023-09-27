@@ -94,7 +94,7 @@ margin-top: -20px;
  }
 
 
- hr{
+ .headHr{
   transform: rotate(100deg);
   width: 50px;
   margin-left: 20px;

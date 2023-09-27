@@ -1,0 +1,164 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color to the body */
+  body {
+    background-color: rgb(197, 196, 196);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  /* Left section (study) styles */
+  .study {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .study>h2{
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+.crs{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+  .study>p{
+    color: grey;
+  }
+
+  .course{
+    display: flex;
+    gap: 30px;
+  }
+
+  .course>h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Right section (education) styles */
+  .education {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4efef;
+  }
+
+  .top>div{
+    background-color: white;
+  }
+
+  .education>img{
+    border-radius: 10px;
+  } 
+  
+
+  .top{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+  }
+
+  .top>div{
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .top>div>p{
+    margin-bottom: 0px;
+    color: grey;
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  .top>div>div>p{
+    text-align: left;
+    color: grey;
+    font-size: 13px;
+    font-weight: 200;
+    margin-left: 20px;
+  }
+
+  .top>div>div>p:first-child{
+    margin-top: 20px;
+  }
+
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .study, .education {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .top{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+  }
+
+
+  .report{
+    display: flex;
+    margin-bottom: -30px;
+    /* border: 1px solid red; */
+  }
+
+ .report + hr{
+    width: 100%;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .report>div{
+    margin-left: 20px;
+  }
+
+  .report>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  .report>div>p{
+    color: rgb(70, 70, 169);
+    margin-top: 15px;
+  }
+
+  .report>div>h5{
+    color: rgb(44, 44, 208);
+    margin-top: -15px;
+  }

@@ -1,0 +1,21 @@
+.changes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+.active-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .inactive-button {
+    background-color: #ccc;
+    color: #000;
+  }
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}

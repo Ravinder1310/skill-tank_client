@@ -52,7 +52,7 @@ const Header = () => {
               </Link>
               <h3>MR</h3>
             </div>
-            <hr />
+            <hr className="headHr"/>
             <div className="edu">
               <p>Part of Times </p>
               <p>Higher Education </p>
@@ -96,11 +96,8 @@ const Header = () => {
             <div className="auth">
               {!auth.user ? (
                 <>
-                  <NavLink to={"/register"} className="nav-link">
-                    Register
-                  </NavLink>
-                  <NavLink to={"/login"} className="nav-link">
-                    Login
+                  <NavLink to={"/authentication"} className="nav-link">
+                      Login
                   </NavLink>
                 </>
               ) : auth.user.role === 1 ? ( // Check if role is 1
